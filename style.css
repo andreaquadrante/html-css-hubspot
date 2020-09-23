@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header-top {
+  background-color: #f4f9fd;
+  width: 100vw;
+  height: 70px;
+  border-bottom: 1px solid #33475b;
+}
+
+.header-menu {
+  background-color: #ffffff;
+  width: 100vw;
+  height: 70px;
+  border-bottom: 1px solid #33475b;
+}
+
+.header-box {
+  background-color: #fff4ef;
+  width: 100vw;
+  height: 490px;
+}
+
+.empty-bar {
+  background-color: #afebe4;
+  width: 100vw;
+  height: 70px;
+  border-bottom: 2px solid #33475b;
+  border-top: 2px solid #33475b;
+}
+
+.main-sale-box {
+  background-color: #f4f9fd;
+  width: 100vw;
+  height: 1330px;
+}
+
+.main-stats-box {
+  background-color: #00baa8;
+  width: 100vw;
+  height: 630px;
+}
+
+.main-customers-box {
+  background-color: #ffffff;
+  width: 100vw;
+  height: 630px;
+}
+
+footer {
+  background-color: #32495b;
+  width: 100vw;
+  height: 560px;
+}
