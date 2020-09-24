@@ -38,7 +38,7 @@
 }
 
 .login-menu {
-  display: inline-block;
+  float: left;
   width: 540px;
   height: 40px;
   background-color: #fe775a;
@@ -93,13 +93,6 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-
-}
-
-.header-copywriting::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .empty-bar {
@@ -146,9 +139,10 @@
 
 .marketing-hub {
   float: left;
-  width: 30%;
+  width: 360px;
   height: 560px;
   background-color: #fe775a;
+  padding: 20px;
 }
 
 .marketing-hub::after {
@@ -158,40 +152,87 @@
 }
 
 .sales-hub {
-  display: inline-block;
-  width: 30%;
+  float: left;
+  width: 360px;
   height: 560px;
   background-color: #33475b;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  padding: 20px;
 }
 
 .service-hub {
-  display: inline-block;
-  width: 30%;
+  float: left;
+  width: 360px;
   height: 560px;
   background-color: #fe775a;
-  position: absolute;
-  right: 0px;
+  padding: 20px;
 }
 
 .main-stats-box {
   background-color: #00baa8;
   width: 100vw;
   height: 630px;
+  position: relative;
+}
+
+.main-stats-box-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.stats-copywriting {
+  background-color: #fe775a;
+  width: 1080px;
+  height: 210px;
+  margin-bottom: 15px;
+}
+
+.stats {
+  background-color: #33475b;
+  width: 1080px;
+  height: 350px;
 }
 
 .main-customers-box {
   background-color: #ffffff;
   width: 100vw;
   height: 630px;
+  position: relative;
+}
+
+.main-customers-box-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.customers {
+  background-color: #fe775a;
+  width: 1080px;
+  height: 210px;
+  margin-bottom: 15px;
+}
+
+.customers-copywriting {
+  background-color: #33475b;
+  width: 1080px;
+  height: 350px;
 }
 
 footer {
   background-color: #32495b;
   width: 100vw;
   height: 560px;
+  position: relative;
+}
+
+.external-links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .external-links-container {
@@ -203,9 +244,10 @@ footer {
 
 .traffic {
   float: left;
-  width: 20%;
+  width: 270px;
   height: 350px;
   background-color: #ffffff;
+  padding: 20px;
 }
 
 .traffic::after {
@@ -215,26 +257,27 @@ footer {
 }
 
 .connect-leads {
-  display: inline-block;
-  width: 20%;
+  float: left;
+  width: 270px;
   height: 350px;
   background-color: #fe775a;
+  padding: 20px;
 }
 
 .manage-leads {
-  display: inline-block;
-  width: 20%;
+  float: left;
+  width: 270px;
   height: 350px;
   background-color: #ffffff;
+  padding: 20px;
 }
 
 .tools {
-  display: inline-block;
-  width: 20%;
+  float: left;
+  width: 270px;
   height: 350px;
   background-color: #fe775a;
-  position: absolute;
-  right: 0px;
+  padding: 20px;
 }
 
 .credits {
