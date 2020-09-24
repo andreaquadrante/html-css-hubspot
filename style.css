@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
 .centering-container {
   width: 1080px;
   margin: auto;
@@ -27,8 +31,9 @@
 .language-menu {
   float: left;
   width: 540px;
-  height: 40px;
-  background-color: #33475b;
+  height: 25px;
+  line-height: 25px;
+  /* background-color: #33475b; */
 }
 
 .language-menu::after {
@@ -37,11 +42,48 @@
   clear: both;
 }
 
+.language-menu div {
+  display: inline-block;
+}
+
+.language {
+  color: #33475b;
+}
+
+.divider, .contact {
+  color: #33475b;
+  margin-left: 15px;
+}
+
 .login-menu {
   float: left;
   width: 540px;
-  height: 40px;
+  height: 25px;
+  line-height: 25px;
+  text-align: right;
+}
+
+.fa-search {
+  color: #00a4bd;
+}
+
+.login-button {
+  display: inline-block;
+  color: #fe775a;
+  background-color: #fafcfe;
+  border-radius: 5px;
+  border: 1px solid #fe775a;
+  padding: 5px 10px;
+  margin-left: 15px;
+}
+
+.get-hubspot-button-small {
+  display: inline-block;
+  color: #fafcfe;
   background-color: #fe775a;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 15px;
 }
 
 .header-menu {
@@ -62,8 +104,8 @@
 .header-logo {
   float: left;
   width: 540px;
-  height: 40px;
-  background-color: #fe775a;
+  height: 25px;
+  line-height: 25px;
 }
 
 .header-logo::after {
@@ -75,24 +117,55 @@
 .header-menu nav {
   display: inline-block;
   width: 540px;
-  height: 40px;
-  background-color: #33475b;
+  height: 25px;
+  line-height: 25px;
+  text-align: right;
+  color: #33475b;
 }
 
-.header-box {
+.header-menu nav ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.header-menu nav ul li i {
+  margin-left: 15px;
+}
+
+.hero-box {
   background-color: #fff4ef;
   width: 100vw;
   height: 490px;
   position: relative;
 }
 
-.header-copywriting {
-  background-color: #33475b;
+.hero-copywriting {
   width: 540px;
-  height: 460px;
+  height: 350px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.hero-copywriting h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #33475b;
+}
+
+.hero-copywriting p {
+  margin-top: 15px;
+  font-weight: 500;
+  color: #33475b;
+}
+
+.get-hubspot-button-big {
+  display: inline-block;
+  color: #fafcfe;
+  background-color: #fe775a;
+  border-radius: 5px;
+  padding: 20px 20px;
+  margin-top: 15px;
 }
 
 .empty-bar {
