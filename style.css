@@ -139,6 +139,14 @@ body {
   position: relative;
 }
 
+.hero-box img {
+  width: auto;
+  height: 490px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
 .hero-copywriting {
   width: 540px;
   height: 350px;
@@ -168,12 +176,21 @@ body {
   margin-top: 15px;
 }
 
-.empty-bar {
+.hero-empty-bar {
   background-color: #afebe4;
   width: 100vw;
-  height: 70px;
-  border-bottom: 2px solid #33475b;
-  border-top: 2px solid #33475b;
+  height: 78.5px;
+  border-bottom: 3px solid #33475b;
+  border-top: 3px solid #33475b;
+  position: relative;
+}
+
+.hero-empty-bar img {
+  width: auto;
+  height: 490px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
 .main-features-box {
