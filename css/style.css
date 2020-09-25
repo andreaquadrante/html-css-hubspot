@@ -75,6 +75,7 @@ body {
   border: 1px solid #fe775a;
   padding: 5px 10px;
   margin-left: 15px;
+  box-sizing: border-box;
 }
 
 .get-hubspot-button-small {
@@ -82,6 +83,7 @@ body {
   color: #fafcfe;
   background-color: #fe775a;
   border-radius: 5px;
+  border: 1px solid #fe775a;
   padding: 5px 10px;
   margin-left: 15px;
 }
@@ -208,17 +210,105 @@ body {
 }
 
 .main-copywriting {
-  background-color: #fe775a;
   width: 1080px;
   height: 280px;
   margin-bottom: 15px;
+  position: relative;
+}
+
+.main-copywriting .copywriting {
+  text-align: center;
+  color: #33475b;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main-copywriting .copywriting img {
+  height: 128px;
+  weight: auto;
+}
+
+.main-copywriting .copywriting h1 {
+  font-weight: 700;
+}
+
+.main-copywriting .copywriting p {
+  font-size: 16px;
+  margin-top: 15px;
 }
 
 .main-crm-box {
-  background-color: #33475b;
+  background-color: #ffffff;
   width: 1080px;
   height: 280px;
+  border-radius: 5px;
   margin-bottom: 15px;
+  position: relative;
+}
+
+.crm-box {
+  width: 900px;
+  height: 210px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.crm-cta {
+  float: left;
+  width: 180px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.crm-cta::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.crm-cta img {
+  height: 72px;
+}
+
+.call-to-action {
+  display: inline-block;
+  color: #fafcfe;
+  background-color: #fe775a;
+  border-radius: 5px;
+  border: 1px solid #fe775a;
+  padding: 5px 10px;
+  margin-top: 15px;
+}
+
+.crm-copywriting {
+  color: #33475b;
+  width: 630px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.crm-copywriting h2 {
+  font-weight: 900;
+}
+
+.crm-copywriting i {
+  color: #fe775a;
+}
+
+.crm-copywriting h2, p, .crm-popolar-feature .popolar-feature {
+  margin-bottom: 15px;
+}
+
+.crm-popolar-feature ul li, .crm-popolar-feature ul li i {
+  display: inline-block;
+  margin-right: 15px;
 }
 
 .main-hubs-box {
@@ -231,8 +321,10 @@ body {
   float: left;
   width: 360px;
   height: 560px;
-  background-color: #fe775a;
+  border-radius: 5px;
+  background-color: #ffffff;
   padding: 20px;
+  position: relative;
 }
 
 .marketing-hub::after {
@@ -245,16 +337,75 @@ body {
   float: left;
   width: 360px;
   height: 560px;
-  background-color: #33475b;
+  border-radius: 5px;
+  background-color: #ffffff;
   padding: 20px;
+  position: relative;
 }
 
 .service-hub {
   float: left;
   width: 360px;
   height: 560px;
-  background-color: #fe775a;
+  border-radius: 5px;
+  background-color: #ffffff;
   padding: 20px;
+  position: relative;
+}
+
+.hub-container {
+  width: 280px;
+  height: 560px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hub-copywriting {
+  margin-top: 15px;
+  color: #33475b;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.hub-copywriting img {
+  height: 72px;
+  margin-bottom: 15px;
+}
+
+.hub-copywriting h2 {
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.hub-copywriting p {
+  font-size: 16px
+}
+
+.hub-popolar-feature {
+  color: #33475b;
+  text-align: center;
+}
+
+.hub-popolar-feature hr {
+  border: 1px solid #33475b;
+  background-color: #33475b;
+  margin-bottom: 30px;
+}
+
+.hub-popolar-feature h3 {
+  margin-bottom: 15px;
+}
+
+.hub-popolar-feature ul li {
+  list-style-type: none;
+  text-align: left;
+}
+
+.hub-popolar-feature ul li i {
+  color: #fe775a;
+  margin-right: 15px;
 }
 
 .main-stats-box {
