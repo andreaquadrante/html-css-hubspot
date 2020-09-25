@@ -8,12 +8,25 @@ body {
   font-family: 'Nunito Sans', sans-serif;
 }
 
-.centering-container {
-  width: 1080px;
+.section-centering {
+  width: 70%;
   margin: auto;
 }
 
-.header-top {
+.container-centering {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.nav-top {
   background-color: #f4f9fd;
   width: 100vw;
   height: 70px;
@@ -21,46 +34,31 @@ body {
   position: relative;
 }
 
-.header-top-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-
 .language-menu {
   float: left;
-  width: 540px;
-  height: 25px;
-  line-height: 25px;
-  /* background-color: #33475b; */
+  width: 50%;
+  height: 35px;
+  line-height: 35px;
 }
 
-.language-menu::after {
-  content: "";
-  display: table;
-  clear: both;
+.login-menu {
+  float: left;
+  width: 50%;
+  height: 35px;
+  text-align: right;
 }
 
 .language-menu div {
   display: inline-block;
 }
 
-.language {
+.language-button {
   color: #33475b;
 }
 
-.divider, .contact {
+.language-menu .divider, .language-menu .contact {
   color: #33475b;
   margin-left: 15px;
-}
-
-.login-menu {
-  float: left;
-  width: 540px;
-  height: 25px;
-  line-height: 25px;
-  text-align: right;
 }
 
 .fa-search {
@@ -78,7 +76,7 @@ body {
   box-sizing: border-box;
 }
 
-.get-hubspot-button-small {
+.cta-small {
   display: inline-block;
   color: #fafcfe;
   background-color: #fe775a;
@@ -88,7 +86,7 @@ body {
   margin-left: 15px;
 }
 
-.header-menu {
+.nav-bottom {
   background-color: #ffffff;
   width: 100vw;
   height: 70px;
@@ -96,41 +94,35 @@ body {
   position: relative;
 }
 
-.header-menu-container {
+.nav-logo {
+  float: left;
+  width: 50%;
+  height: 35px;
+  line-height: 35px;
+  vertical-align: middle;
+}
+
+.nav-logo img {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translateY(-50%);
 }
 
-.header-logo {
+.nav-bottom nav {
   float: left;
-  width: 540px;
-  height: 25px;
-  line-height: 25px;
-}
-
-.header-logo::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.header-menu nav {
-  display: inline-block;
-  width: 540px;
-  height: 25px;
-  line-height: 25px;
+  width: 50%;
+  height: 35px;
+  line-height: 35px;
   text-align: right;
   color: #33475b;
 }
 
-.header-menu nav ul li {
+.nav-bottom nav ul li {
   display: inline-block;
   margin-left: 15px;
 }
 
-.header-menu nav ul li i {
+.nav-bottom nav ul li i {
   margin-left: 15px;
 }
 
@@ -169,7 +161,7 @@ body {
   color: #33475b;
 }
 
-.get-hubspot-button-big {
+.cta-big {
   display: inline-block;
   color: #fafcfe;
   background-color: #fe775a;
@@ -195,28 +187,21 @@ body {
   right: 0px;
 }
 
-.main-features-box {
+.features {
   background-color: #f4f9fd;
   width: 100vw;
   height: 1180px;
   position: relative;
 }
 
-.main-features-box-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-
-.main-copywriting {
+.features-copywriting {
   width: 1080px;
   height: 280px;
   margin-bottom: 15px;
   position: relative;
 }
 
-.main-copywriting .copywriting {
+.features-copywriting .copywriting {
   text-align: center;
   color: #33475b;
   position: absolute;
@@ -224,16 +209,16 @@ body {
   transform: translateY(-50%);
 }
 
-.main-copywriting .copywriting img {
+.features-copywriting .copywriting img {
   height: 128px;
   weight: auto;
 }
 
-.main-copywriting .copywriting h1 {
+.features-copywriting .copywriting h1 {
   font-weight: 700;
 }
 
-.main-copywriting .copywriting p {
+.features-copywriting .copywriting p {
   font-size: 16px;
   margin-top: 15px;
 }
@@ -275,7 +260,7 @@ body {
   height: 72px;
 }
 
-.call-to-action {
+.cta {
   display: inline-block;
   color: #fafcfe;
   background-color: #fe775a;
@@ -317,49 +302,23 @@ body {
   position: relative;
 }
 
-.marketing-hub {
+.hub-floating {
   float: left;
-  width: 360px;
-  height: 560px;
-  border-radius: 5px;
   background-color: #ffffff;
-  padding: 20px;
+  width: 30%;
+  height: 560px;
+  padding: 1%;
   position: relative;
 }
 
-.marketing-hub::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.sales-hub {
-  float: left;
-  width: 360px;
-  height: 560px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  padding: 20px;
-  position: relative;
-}
-
-.service-hub {
-  float: left;
-  width: 360px;
-  height: 560px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  padding: 20px;
-  position: relative;
+.hub-margin {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .hub-container {
-  width: 280px;
+  width: 90%;
   height: 560px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .hub-copywriting {
@@ -415,13 +374,6 @@ body {
   position: relative;
 }
 
-.main-stats-box-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .stats-copywriting {
   background-color: #fe775a;
   width: 1080px;
@@ -440,13 +392,6 @@ body {
   width: 100vw;
   height: 630px;
   position: relative;
-}
-
-.main-customers-box-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .customers {
@@ -470,13 +415,6 @@ footer {
 }
 
 .external-links {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.external-links-container {
   width: 1080px;
   height: 350px;
   position: relative;
