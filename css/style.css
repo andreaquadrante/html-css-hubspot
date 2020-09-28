@@ -533,19 +533,28 @@ footer {
   position: relative;
 }
 
-.external-links {
+.footer-links {
   width: 1080px;
   height: 350px;
   position: relative;
   margin-bottom: 15px;
 }
 
+.footer-links h4 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-links ul li {
+  color: #cbd6e2;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
 .traffic {
   float: left;
   width: 270px;
   height: 350px;
-  background-color: #fff;
-  padding: 20px;
 }
 
 .traffic::after {
@@ -558,24 +567,34 @@ footer {
   float: left;
   width: 270px;
   height: 350px;
-  background-color: #fe775a;
-  padding: 20px;
 }
 
 .manage-leads {
   float: left;
   width: 270px;
   height: 350px;
-  background-color: #fff;
-  padding: 20px;
 }
 
 .tools {
   float: left;
   width: 270px;
   height: 350px;
-  background-color: #fe775a;
-  padding: 20px;
+}
+
+.footer-links .tools .support-cta {
+  font-size: 14px;
+  color: #32495b;
+  background-color: #cbd6e2;
+  border-radius: 5px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.footer-links .social-links ul li {
+  display: inline-block;
+  color: #cbd6e2;
+  margin-top: 15px;
+  margin-right: 25px;
 }
 
 .credits {
