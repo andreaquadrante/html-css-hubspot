@@ -581,5 +581,52 @@ footer {
 .credits {
   width: 1080px;
   height: 140px;
-  background-color: #fe775a;
+  position: relative;
+}
+
+.credits .languages-buttons {
+  text-align: center;
+}
+
+.credits ul li {
+  display: inline-block;
+  color: #cbd6e2;
+  margin-left: 15px;
+  margin-right: 15px;
+  list-style-type: none;
+}
+
+.credits hr {
+  border: 1px solid #cbd6e2;
+  background-color: #cbd6e2;
+  margin-top: 15px;
+}
+
+.credits .footer-logo {
+  float: left;
+  width: 50%;
+  height: 35px;
+  margin-top: 15px;
+}
+
+.credits .footer-logo img {
+  height: 25px;
+}
+
+.credits .privacy-links {
+  float: left;
+  color: #cbd6e2;
+  width: 50%;
+  height: 35px;
+  margin-top: 15px;
+  text-align: right;
+}
+
+.credits .privacy-links .legal-stuff {
+  margin-right: 15px;
+}
+
+.credits .copyright-text {
+  color: #fff;
+  font-size: 14px;
 }
